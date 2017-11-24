@@ -3,9 +3,9 @@
 
 {% block content %}
     <div class="notelist">
-        {% for i in range(0, 100) %}
+        {% for note in notes %}
             <div class="note">
-                <p>Example note</p>
+                <p>{{ note }}</p>
             </div>
         {% endfor %}
     </div>
